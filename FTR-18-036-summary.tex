@@ -75,14 +75,15 @@
 \section{Introduction}\label{sec:introduction}
 
 Many beyond the Standard Model (BSM) predictions include anomalous couplings of the top quark to the electroweak gauge bosons~\cite{Hollik:1998vz,Agashe:2006wa,Kagan:2009bn,Ibrahim:2010hv,Ibrahim:2011im,Grojean:2013qca,Richard:2013pwa}.
-While we restrict this study to the \ttZ channel and the CMS Phase-2 detector with a luminosity scenario of 3~ab${}^{-1}$, we go  beyond earlier work~\cite{Rontsch:2015una} and study the sensitivity of the \ttZ process using differential cross section data.
+While we restrict this study to the \ttZ channel and the CMS Phase-2 detector with a luminosity scenario of 3~ab${}^{-1}$, we go beyond earlier work~\cite{Rontsch:2015una} and study the sensitivity of the \ttZ process using differential cross section data.
 We interpret the result in terms of the SM effective field theory~\cite{AguilarSaavedra:2018nen} and set limits on the relevant Wilson coefficients of the Warsaw basis~\cite{Grzadkowski:2010es} \ctZ, \ctZI, \cpt and \cpQM~\cite{Brehmer:2016nyr, Brehmer:2017fyp}.
 
 \section{Event simulation}
 \label{sec:eventsimulation}
 We generate events at the parton level at LO using \MGvATNLO~v2.3.3~\cite{Alwall:2014hca}, and decay them using \MadSpin~\cite{Artoisenet:2012st, Frixione:2007zp}.
 Parton showering and hadronization are done using \PYTHIA 8.2~\cite{Sjostrand:2007gs,Sjostrand:2014zea}.
-Fast detector simulation was performed using \delphes~\cite{deFavereau:2013fsa}, with the CMS reconstruction efficiency parametrization for the Phase-2 upgrade with 200PU.
+Fast detector simulation was performed using \delphes~\cite{deFavereau:2013fsa}, with the CMS reconstruction efficiency parametrization for the Phase-2 upgrade.
+The mean number of interactions per bunch crossing (pileup, PU) is varied from 0 to 200.
 Jets are reconstructed with the {\texttt FastJet} package~\cite{Cacciari:2011ma} and using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with a cone size $R=0.4$.
 Besides the signals, we also generate the main backgrounds in the leptonic final states in order to achieve a realistic background prediction.
 The \WZ, \tZq, \tWZ, \ttG and \ttZ processes are normalized to cross sections calculated up to next-to-leading order (NLO) in perturbative QCD.
@@ -97,15 +98,15 @@ Furthermore, at least 3 jets are required with \pT(\jet) $>$ 30~\GeV and $|\eta(
 
 \noindent
 We consider the distributions of the observables above in equally sized bins of the transverse \PZ~boson momenta \pTZ~\cite{Rontsch:2014cca} and \cosThetaStar, the relative angle of the negatively charged lepton to the \PZ~boson direction of flight in the rest frame of the boson.
-The differential cross sections for the SM (black) and BSM (colored lines) interpretations in \ttZ with respect to \pTZ and \cosThetaStar are shown in Fig.~\ref{fig:ttZ_pt_cos} for \ctZ = 2.4~($\Lambda$/\TeV)$^2$ and \ctZI = 2.4~($\Lambda$/\TeV)$^2$.
+The differential cross sections for the SM (black) and BSM (colored lines) interpretations in \ttZ with respect to \pTZ and \cosThetaStar are shown in Fig.~\ref{fig:ttZ_pt_cos} for \ctZ = 2~($\Lambda$/\TeV)$^2$ and \ctZI = 2~($\Lambda$/\TeV)$^2$.
 We normalize the BSM distributions to the SM yield in the plots to visualize the discriminating features of the parameters.
 The part of the signal which does not contain information on the Wilson coefficients is shown hatched, backgrounds are shown in solid colors.
 
 \begin{figure}[tbp]
   \centering
-    \includegraphics[trim={0.2cm 0.5cm 0.4cm 0cm},clip,width=0.30\textwidth]{Figures/Z_pt_lin.pdf}
+    \includegraphics[trim={0.2cm 1.cm 0.4cm 0.cm},clip,width=0.40\textwidth]{Figures/Z_pt_lin.pdf}
     \hspace{1.7cm}
-    \includegraphics[trim={0.2cm 0.5cm 0.4cm 0cm},clip,width=0.30\textwidth]{Figures/Z_costheta_lin_ptZ200.pdf}
+    \includegraphics[trim={0.2cm 1.cm 0.4cm 0.cm},clip,width=0.40\textwidth]{Figures/Z_costheta_lin_ptZ200.pdf}
     \hspace{.3cm}
 \caption{
 Differential cross sections of \pTZ (left) and \cosThetaStar (right) for the in the text mentioned selection and the Phase-2 scenario.
@@ -116,17 +117,18 @@ For \cosThetaStar, additionally \pTZ $>$ 200~\GeV is applied.
 \section{Results}
 \label{sec:results}
 
-The predicted yields are estimated for the 3~ab${}^{-1}$ HL-LHC scenario at $\sqrt{s}=13$~\TeV and scaled to 14~\TeV.
-We perform a binned profiled maximum log-likelihood fit of the ratio $q(r)=-2L(r,\hat{\theta}_r)/L(\hat{r},\hat{\theta)})$, where $\theta$ are nuisance parameters and $\hat{\theta}_r$ maximize the likelihood function for a signal strength modifier~$r$. $\hat{r}$ and $\hat{\theta}$ maximize $L$.
+The predicted yields are estimated for the 3~ab${}^{-1}$ HL-LHC scenario at $\sqrt{s}=13$~\TeV and scaled to 14~\TeV, where an additional small background from non-prompt leptons is taken from Ref.~\cite{Sirunyan:2017uzs} and scaled to 3~ab${}^{-1}$.
+We perform a profiled maximum likelihood fit of the binned likelihood function $L(\theta)$ and consider $q(r)=-2\log(L(\hat{\theta})/L(\hat{\theta}_{\textrm{SM}}))$, where $\hat{\theta}$ and
+$\hat{\theta}_\textrm{SM}$ are the set of nuisance parameters maximizing $L(\theta)$ at the BSM and SM point, respectively.
 Experimental uncertainties are estimated based on the expected performance of the Phase-2 CMS detector.
 In Fig.~\ref{fig:ttZ_nll}, the log-likelihood scan for the \ttZ process is shown in the \cpQM/\cpt parameter plane~(left) and the dipole moment parameter plane \ctZ/\ctZI~(right).
 The green (red) lines show the $1\sigma$ ($2\sigma$) contour line and the SM parameter point corresponds to \cpt = \cpQM = 0 and \ctZ = \ctZI = 0.
 
 \begin{figure}[tbp]
   \centering
-    \includegraphics[trim={0.4cm 0.3cm 0.8cm 0.cm},clip,width=0.35\textwidth]{Figures/cpQM_cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.3cm 0.8cm 0.cm},clip,width=0.4\textwidth]{Figures/cpQM_cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
     \hspace{1cm}
-    \includegraphics[trim={0.4cm 0.3cm 0.8cm 0.cm},clip,width=0.35\textwidth]{Figures/ctZ_ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.3cm 0.8cm 0.cm},clip,width=0.4\textwidth]{Figures/ctZ_ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
   \caption{Scan of the negative log-likelihood in the \cpQM/\cpt (left) and \ctZ/\ctZI parameter planes (right) for the \ttZ process. 
            The $\pm 1\sigma$ ($\pm 2\sigma$) contour lines are given in green (red).
            }
