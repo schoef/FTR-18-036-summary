@@ -123,6 +123,8 @@ $\hat{\theta}_\textrm{SM}$ are the set of nuisance parameters maximizing $L(\the
 Experimental uncertainties are estimated based on the expected performance of the Phase-2 CMS detector.
 In Fig.~\ref{fig:ttZ_nll}, the log-likelihood scan for the \ttZ process is shown in the \cpQM/\cpt parameter plane~(left) and the dipole moment parameter plane \ctZ/\ctZI~(right).
 The green (red) lines show the $1\sigma$ ($2\sigma$) contour line and the SM parameter point corresponds to \cpt = \cpQM = 0 and \ctZ = \ctZI = 0.
+In Tab.~\ref{tab:proflimits}, the 68\% and 95\% CL intervals of the likelihood scans are summarized, where the second Wilson coefficient of the parameter plane is included in the profiling of nuisance parameters.
+In Tab.~\ref{tab:limits}, the 68\% and 95\% CL intervals of the 1D likelihood scan is shown, where only one Wilson coefficient at a time is considered non-zero.
 
 \begin{figure}[tbp]
   \centering
@@ -134,6 +136,49 @@ The green (red) lines show the $1\sigma$ ($2\sigma$) contour line and the SM par
            }
   \label{fig:ttZ_nll}
 \end{figure}
+
+\begin{table}[h]
+\caption{Expected 68~\% and 95~\% CL intervals for the selected Wilson coefficients in a profiled scan.}\label{tab:proflimits}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+Wilson coefficient & 68~\% CL $(\Lambda/$\TeV$)^2$ & 95~\% CL $(\Lambda/$\TeV$)^2$ \\
+\hline
+\hline
+\cpt   & [-1.66, 3.41]                 & [-2.94, 6.82]                 \\ 
+\hline
+\cpQM  & [-1.35, 2.97]                 & [-2.37, 6.76]                 \\ 
+\hline
+\ctZ   & [-0.37, 0.35]                 & [-0.53, 0.51]                 \\ 
+\hline
+\ctZI  & [-0.38, 0.35]                 & [-0.54, 0.50]                 \\ 
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\caption{Expected 68~\% and 95~\% CL intervals, where one Wilson coefficient at a time is considered non-zero.}\label{tab:limits}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+Wilson coefficient & 68~\% CL $(\Lambda/\TeV)^2$ & 95~\% CL $(\Lambda/\TeV)^2$ \\
+\hline
+\hline
+\cpt  & [-0.67, 0.67]                 & [-1.24, 1.24]                 \\
+\hline
+\cpQM & [-0.56, 0.55]                 & [-1.05, 1.02]                 \\
+\hline
+\ctZ  & [-0.37, 0.35]                 & [-0.53, 0.51]                 \\
+\hline
+\ctZI & [-0.38, 0.35]                 & [-0.54, 0.50]                 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
 
 \clearpage
 \bibliographystyle{unsrt}
