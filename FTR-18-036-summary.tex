@@ -35,7 +35,7 @@
 \def\PAQt{\bar{t}\xspace}
 \def\PQq{q\xspace}
 \def\cPgn{\nu\xspace}
-\def\Pl{l}
+\def\Pl{\ell}
 \def\jet{j}
 
 \def\ttZ{t$\bar{\text{t}}$Z\xspace}
@@ -91,8 +91,8 @@ The \WZ, \tZq, \tWZ, \ttG and \ttZ processes are normalized to cross sections ca
 \section{Event selection}
 \label{sec:selection}
 From results on the inclusive \ttZ cross section from ATLAS~\cite{Aad:2015eua,ATLAS:2016ttVarticles} and CMS~\cite{PRL-110-172002,EPJC-C74-2014-9,JHEP-1601-2016-096,Sirunyan:2017uzs} it follows that the three lepton channel, where the \PZ and one of the \PW~bosons originating from a top~quark decay leptonically is the most sensitive search channel.
-We thus require three reconstructed leptons (e~or~$\mu$) with \pT(\Pl) thresholds of 10, 20, and 40~\GeV, respectively, and $|\eta($\Pl$)|<3.0$.
-We furthermore require that there is among them a pair of opposite-sign same-flavor leptons consistent with the \PZ~boson by requiring $|m($\Pl\Pl$)-m_\text{\PZ}|<10$~\GeV.
+We thus require three reconstructed leptons (e~or~$\mu$) with \pT($\Pl$) thresholds of 10, 20, and 40~\GeV, respectively, and $|\eta(\Pl)|<3.0$.
+We furthermore require that there is among them a pair of opposite-sign same-flavor leptons consistent with the \PZ~boson by requiring $|m(\Pl\Pl)-m_\text{\PZ}|<10$~\GeV.
 We remove reconstructed leptons within a cone of $\Delta R < 0.3$ to any reconstructed jet satisfying \pT(\jet) $>$ 30~\GeV.
 Furthermore, at least 3 jets are required with \pT(\jet) $>$ 30~\GeV and $|\eta($\jet$)|<4.0$, where one of the jets has been identified as a b-tag jet according to the \delphes specification.
 
@@ -121,91 +121,86 @@ The predicted yields are estimated for the 3~ab${}^{-1}$ HL-LHC scenario at $\sq
 We perform a profiled maximum likelihood fit of the binned likelihood function $L(\theta)$ and consider $q(r)=-2\log(L(\hat{\theta})/L(\hat{\theta}_{\textrm{SM}}))$, where $\hat{\theta}$ and
 $\hat{\theta}_\textrm{SM}$ are the set of nuisance parameters maximizing $L(\theta)$ at the BSM and SM point, respectively.
 Experimental uncertainties are estimated based on the expected performance of the Phase-2 CMS detector.
-In Fig.~\ref{fig:ttZ_1Dnll}, the likelihood scan for the \ttZ process is shown, where one Wilson coefficients at a time is considered non-zero.
+In Fig.~\ref{fig:ttZ_1Dnll}, the likelihood scan for the \ttZ process is shown, where we consider one non-zero Wilson coefficient at a time, and all others are set to zero.
 The corresponding 68\% and 95\% CL intervals are summarized in Table~\ref{tab:limits}.
-In Fig.~\ref{fig:ttZ_1Dprofnll} we consider two pairs of Wilson coefficients corresponding to modified neutral current interactions (\cpt and \cpQM), and dipole moment interactions (\ctZ and \ctZI).
+In Fig.~\ref{fig:ttZ_1Dprofnll}, likelihood ratios for two pairs of Wilson coefficients corresponding to modified neutral current interactions (\cpt and \cpQM) and dipole moment interactions (\ctZ and \ctZI) are considered.
 The Wilson coefficient not shown on the $x$ axis is included in the profiling of nuisance parameters.
 The corresponding 68\% and 95\% CL intervals are summarized in Table~\ref{tab:proflimits}.
 In Fig.~\ref{fig:ttZ_nll}, the log-likelihood scan for the \ttZ process is shown in the \cpQM/\cpt parameter plane~(left) and the dipole moment parameter plane \ctZ/\ctZI~(right).
-The green (red) lines show the $1\sigma$ ($2\sigma$) contour line and the SM parameter point corresponds to \cpt = \cpQM = 0 and \ctZ = \ctZI = 0.
+The green (red) lines show the 68\% (95\%) CL contour line and the SM parameter point corresponds to \cpt = \cpQM = 0 and \ctZ = \ctZI = 0.
 
-
-\begin{figure}[tbp]
-  \centering
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_cpQM_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_ctZ_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-  \caption{Individual likelihood ratio for the Wilson coefficients cpt and cpQM (top) and ctZ and ctZI (bottom) for the ttZ process.
-           Here, only one Wilson coefficient at a time is considered non-zero.
-           The $\pm 1\sigma$ ($\pm 2\sigma$) intervals are given in green (red).
-           }
-  \label{fig:ttZ_1Dnll}
-\end{figure}
-
-\begin{figure}[tbp]
-  \centering
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/cpQM_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/ctZ_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \includegraphics[trim={0.4cm 0.2cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-  \caption{Individual profiled likelihood ratio for the Wilson coefficients \cpt and \cpQM (top) and \ctZ and \ctZI (bottom) for the \ttZ process under the SM hypothesis.
-           The $\pm 1\sigma$ ($\pm 2\sigma$) intervals are given in green (red).
-           }
-  \label{fig:ttZ_1Dprofnll}
-\end{figure}
-
-
-
-\begin{table}[h]
-\caption{Expected 68~\% and 95~\% CL intervals for the selected Wilson coefficients in a profiled scan.}\label{tab:proflimits}
-\begin{center}
-\begin{tabular}{c|c|c}
-\hline
-Wilson coefficient & 68~\% CL $(\Lambda/$\TeV$)^2$ & 95~\% CL $(\Lambda/$\TeV$)^2$ \\
-\hline
-\hline
-\cpt   & [-1.66, 3.41]                 & [-2.94, 6.82]                 \\ 
-\hline
-\cpQM  & [-1.35, 2.97]                 & [-2.37, 6.76]                 \\ 
-\hline
-\ctZ   & [-0.37, 0.35]                 & [-0.53, 0.51]                 \\ 
-\hline
-\ctZI  & [-0.38, 0.35]                 & [-0.54, 0.50]                 \\ 
-\hline
-\end{tabular}
-\end{center}
-\end{table}
 
 \begin{table}[h]
 \caption{Expected 68~\% and 95~\% CL intervals, where one Wilson coefficient at a time is considered non-zero.}\label{tab:limits}
 \begin{center}
 \begin{tabular}{c|c|c}
 \hline
-Wilson coefficient & 68~\% CL $(\Lambda/$\TeV$)^2$ & 95~\% CL $(\Lambda/$\TeV$)^2$ \\
+Wilson coefficient & 68~\% CL $(\Lambda/$TeV$)^2$ & 95~\% CL $(\Lambda/$TeV$)^2$ \\
 \hline
 \hline
-\cpt  & [-0.67, 0.67]                 & [-1.24, 1.24]                 \\
+\cpt   & [-0.47, 0.47]                 & [-0.89, 0.89]                 \\
 \hline
-\cpQM & [-0.56, 0.55]                 & [-1.05, 1.02]                 \\
+\cpQM  & [-0.38, 0.38]                 & [-0.75, 0.73]                 \\
 \hline
-\ctZ  & [-0.37, 0.35]                 & [-0.53, 0.51]                 \\
+\ctZ   & [-0.37, 0.36]                 & [-0.52, 0.51]                 \\
 \hline
-\ctZI & [-0.38, 0.35]                 & [-0.54, 0.50]                 \\
+\ctZI  & [-0.38, 0.36]                 & [-0.54, 0.51]                 \\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
 
-
+\begin{table}[h]
+\caption{Expected 68~\% and 95~\% CL intervals for the selected Wilson coefficients in a profiled scan over the 2D parameter planes \cpQM/\cpt and \ctZ/\ctZI. The respective second parameter of the scan is left free.}\label{tab:proflimits}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+Wilson coefficient & 68~\% CL $(\Lambda/$TeV$)^2$ & 95~\% CL $(\Lambda/$TeV$)^2$ \\
+\hline
+\hline
+\cpt   & [-1.65, 3.37]                 & [-2.89, 6.76]                 \\
+\hline
+\cpQM  & [-1.35, 2.92]                 & [-2.33, 6.69]                 \\
+\hline
+\ctZ   & [-0.37, 0.36]                 & [-0.52, 0.51]                 \\
+\hline
+\ctZI  & [-0.38, 0.36]                 & [-0.54, 0.51]                 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
 
 \begin{figure}[tbp]
   \centering
-    \includegraphics[trim={0.4cm 0.3cm 0.8cm 0.cm},clip,width=0.4\textwidth]{Figures/cpQM_cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-    \hspace{1cm}
-    \includegraphics[trim={0.4cm 0.3cm 0.8cm 0.cm},clip,width=0.4\textwidth]{Figures/ctZ_ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
-  \caption{Scan of the negative log-likelihood in the \cpQM/\cpt (left) and \ctZ/\ctZI parameter planes (right) for the \ttZ process. 
-           The $\pm 1\sigma$ ($\pm 2\sigma$) contour lines are given in green (red).
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_cpQM_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_ctZ_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/1D_ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+  \caption{Individual likelihood ratio for the Wilson coefficients cpt and cpQM (top) and ctZ and ctZI (bottom) for the ttZ process.
+           Here, only one Wilson coefficient at a time is considered non-zero.
+           The 68\% (95\%) CL intervals are given in green (red).
+           }
+  \label{fig:ttZ_1Dnll}
+\end{figure}
+
+\begin{figure}[tbp]
+  \centering
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/cpQM_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/ctZ_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+  \caption{Individual profiled likelihood ratio for the Wilson coefficients \cpt and \cpQM (top) and \ctZ and \ctZI (bottom) for the \ttZ process under the SM hypothesis.
+           The 68\% (95\%) CL intervals are given in green (red).
+           }
+  \label{fig:ttZ_1Dprofnll}
+\end{figure}
+
+\begin{figure}[tbp]
+  \centering
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/cpQM_cpt_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+    \includegraphics[trim={0.4cm 0.cm 0.8cm 0.cm},clip,width=0.45\textwidth]{Figures/ctZ_ctZI_lumi3000_14TeV_CMScombine_r1_fullUnc.pdf}
+  \caption{Scan of the negative likelihood in the \cpQM/\cpt (left) and \ctZ/\ctZI parameter planes (right) for the \ttZ process under the SM hypothesis.
+           The 68\% (95\%) CL contour lines are given in green (red).
            }
   \label{fig:ttZ_nll}
 \end{figure}
